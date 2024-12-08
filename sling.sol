@@ -1,11 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.24;
 
-// Website: https://nextgenx.org
-// Telegram: https://t.me/BitcoinXonBASE
-// Twitter: https://x.com/officialbtcx
-// Linktree: https://linktr.ee/officialbitcoinx
-
 // File @openzeppelin/contracts/utils/Context.sol@v4.8.1
 
 // OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
@@ -643,8 +638,8 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     ) internal virtual {}
 }
 
-contract BTCX is ERC20, Ownable {
-    constructor() ERC20("Bitcoin X", "BTCX") {
+contract Sling is ERC20, Ownable {
+    constructor() ERC20("Slinger", "$SLING") {
         _mint(msg.sender, 21000000 * 10 ** decimals());
     }
 
